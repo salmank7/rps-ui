@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+    <!-- messages -->
+    <main>
+      <div class="messages">
+        <h2 class="resultMessage">Choose Your Wepon</h2>
+        <p class="scoreMessage">First To Score 5 Wins The Game</p>
+      </div>
+      <div class="results">
+        <div class="score player">
+          <div class="pSign">?</div>
+          <p>PlayerScore: <span class="pScore">0</span></p>
+        </div>
+        <div class="score computer">
+          <div class="cSign">?</div>
+          <p>computerScore: <span class="cScore">0</span></p>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="buttons">
+          <button class="btn" id="rockBtn">
+            <div class="sign rock">✊</div>
+          </button>
+          <button class="btn" id="paperBtn">
+            <div class="sign paper">✋</div>
+          </button>
+          <button class="btn" id="scissorsBtn">
+            <div class="sign scissors">✌</div>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <h1>
+            Copyright &copy; salmank7 <a target="_blank" href="https://github.com/salmank7"><img src="./github.png" alt=""></a>
+        </h1>
+    </footer>
+
+    <!--endgameModel  -->
+
+    <div class="modal" id="modal">
+      <div class="container">
+        <h1>Game Is Over <span class="modalMessage">You Won</span></h1>
+        <button id="modalBtn">Restart?</button>
+      </div>
+    </div>
+  </body>
+</html>
